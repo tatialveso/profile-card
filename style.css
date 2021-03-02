@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #19a2ae;
+    background-image: url('./images/bg-pattern-top.svg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-image: url('./images/bg-pattern-card.svg');
+    border-radius: 5%;
+    width: 80%;
+    margin-top: 30%;
+}
+
+img {
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    position: relative;
+    top: 50px;
+    left: 90px;
+}
+
+.card-info {
+    background-color: #FFFFFF;
+    border-radius: 0 0 5% 5%;
+}
+
+.name-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.name-info>h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.name-info>h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 10px;
+    color: hsl(227, 10%, 46%);
+}
+
+.city-info {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: hsl(227, 10%, 46%);
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border-top: 1px solid hsl(0, 0%, 59%, 0.2);
+    padding: 20px;
+}
+
+section h3 {
+    font-size: 18px;
+}
+
+.section-p {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color: hsl(227, 10%, 46%);
+}
+
+@media (min-width:1000px) {
+    main {
+        width: 20%;
+        margin-top: 15%;
+    }
+
+    img {
+        left: 85px;
+    }
+}
